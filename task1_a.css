@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox.active {
+    display: flex;
+  }
+  

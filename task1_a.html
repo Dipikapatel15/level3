@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="task1_a.css">
+</head>
+<body>
+  <div class="gallery">
+    <img src="task1.jpeg" alt="Image 1" class="thumbnail" onclick="enlargeImage('task1.jpeg')">
+    <img src="task2.jpg" alt="Image 2" class="thumbnail" onclick="enlargeImage('task2.jpg')">
+    <img src="task3.jpg" alt="Image 3" class="thumbnail" onclick="enlargeImage('task2.jpg')">
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Enlarged Image">
+  </div>
+
+  <script src="task1_a.js"></script>
+</body>
+</html>
